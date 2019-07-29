@@ -24,11 +24,21 @@ func main() {
 
 	age := 27
 
+	var status bool = true
+
+	var stature float32 = 1.68
+
 	// Concatenar strings
 	fmt.Println(".....Hello " + name + " " + last_name + ".....\n")
 
 	fmt.Println("...Country:\n" + country + "\n\n...Age: ")
 	fmt.Println(age)
+
+	fmt.Println("\n...Status")
+	fmt.Println(status)
+
+	fmt.Println("\n...Stature")
+	fmt.Println(stature)
 
 	// Tiempo de espera un segundo
 	time.Sleep(time.Second * 1)
