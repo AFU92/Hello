@@ -28,11 +28,16 @@ func main() {
 
 	var stature float32 = 1.68
 
+	// Constante
+
+	const date_of_birth int = 1992
+
 	// Concatenar strings
 	fmt.Println(".....Hello " + name + " " + last_name + ".....\n")
 
 	fmt.Println("...Country:\n" + country + "\n\n...Age: ")
 	fmt.Println(age)
+	fmt.Println(date_of_birth)
 
 	fmt.Println("\n...Status")
 	fmt.Println(status)
