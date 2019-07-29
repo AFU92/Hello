@@ -14,10 +14,21 @@ func main() {
 
 	var sum int = 8 + 9
 	var rest int = 8 - 9
-	var name string = "Andrea Fuentes"
+	var name string = "Andrea"
+	var last_name string = "Fuentes"
+
+	// Actualizar la variable
+	name = "Mary"
+
+	country := "Colombia"
+
+	age := 27
 
 	// Concatenar strings
-	fmt.Println(".....Hello " + name + ".....")
+	fmt.Println(".....Hello " + name + " " + last_name + ".....\n")
+
+	fmt.Println("...Country:\n" + country + "\n\n...Age: ")
+	fmt.Println(age)
 
 	// Tiempo de espera un segundo
 	time.Sleep(time.Second * 1)
