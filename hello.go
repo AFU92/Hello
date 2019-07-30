@@ -2,56 +2,61 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
-// Comentario sencillo xD
+//
+type Cap struct {
+	// Modelos de datos
+	brand string
+	color string
+	price float32
+	curve bool
+}
 
 func main() {
-	// var -> variable
-	// int -> tipo de dato intero
-	// = -> asignación
 
-	var sum int = 8 + 9
-	var rest int = 8 - 9
-	var name string = "Andrea"
-	var last_name string = "Fuentes"
+	var cap_black = Cap{
+		brand: "Nike",
+		color: "Black",
+		price: 20.25,
+		curve: true}
 
-	// Actualizar la variable
-	name = "Mary"
+	var cap_red = Cap{
+		"Adidas",
+		"Black",
+		24.50,
+		true}
 
-	country := "Colombia"
+	fmt.Println(".....Black cap")
+	fmt.Println(cap_black.brand)
+	fmt.Println(cap_black.price)
 
-	age := 27
+	fmt.Println(".....Red cap")
 
-	var status bool = true
+	fmt.Println(cap_red)
 
-	var stature float32 = 1.68
+	var num1 float32 = 10
+	var num2 float32 = 6
 
-	// Concatenar strings
-	fmt.Println(".....Hello " + name + " " + last_name + ".....\n")
+	var num3 int = 10
+	var num4 int = 6
 
-	fmt.Println("...Country:\n" + country + "\n\n...Age: ")
-	fmt.Println(age)
+	fmt.Print("\nThe sum is: ")
+	fmt.Println(num1 + num2)
 
-	fmt.Println("\n...Status")
-	fmt.Println(status)
+	fmt.Print("The rest is: ")
+	fmt.Println(num1 - num2)
 
-	fmt.Println("\n...Stature")
-	fmt.Println(stature)
+	fmt.Print("The mult is: ")
+	fmt.Println(num1 * num2)
 
-	// Tiempo de espera un segundo
-	time.Sleep(time.Second * 1)
+	fmt.Print("The div float is: ")
+	fmt.Println(num1 / num2)
 
-	fmt.Println("\n8+9 =")
-	fmt.Println(sum)
+	fmt.Print("The div int is: ")
+	fmt.Println(num3 / num4)
 
-	// Tiempo de espera dos segundos
-	time.Sleep(time.Second * 2)
-	fmt.Println("\n8-9 =")
-	fmt.Println(rest)
-	/*
-		Comentario de
-		varias lineas */
+	fmt.Print("The residue is: ")
+	fmt.Println(num3 % num4)
 
 }
